@@ -1,4 +1,5 @@
 let margin = 0;
+let marginAdvogado = 0;
 
 document.querySelector('.material-symbols-outlined').addEventListener('click', ()=>{ 
     document.querySelector('.menu-hamburguer').style.opacity = 0; 
@@ -66,4 +67,23 @@ document.querySelector('.servicos-seta-right .material-symbols-outlined').addEve
         document.querySelector('.servicos-list').style.marginLeft = margin + 'px';
     }
     
+});
+
+
+document.querySelector('.advogado-seta-left .material-symbols-outlined').addEventListener('click', () => {
+
+    marginAdvogado = marginAdvogado + 80;
+    if(marginAdvogado > 0){
+        marginAdvogado = 0;
+    }
+
+    document.querySelector('.advogado-list').style.marginLeft = marginAdvogado + 'vw';
+});
+
+document.querySelector('.advogado-seta-right  .material-symbols-outlined').addEventListener('click', () => {
+    marginAdvogado = marginAdvogado - 80;
+    if(marginAdvogado < (-240)){
+        marginAdvogado = (-240);
+    }
+    document.querySelector('.advogado-list').style.marginLeft = marginAdvogado + 'vw';
 });

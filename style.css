@@ -4,7 +4,7 @@
     margin:0;
 }
 body {
-    background-color: black;
+    background-color: #fcfaed;
     font-family:'Montserrat',Helvetica,Arial;
     font-size:10px;
     overflow-x: hidden;
@@ -347,7 +347,7 @@ header .header-menu nav ul li a:hover {
  #servicos {
     width: 100%;
     height: 80vh;
-    background-color: #350508;
+    background-color: #380508;
     padding-top: 70px;
     padding-bottom: 40px;
     display: flex;
@@ -381,7 +381,6 @@ header .header-menu nav ul li a:hover {
  .servicos-seta-right {
     width: 110px;
     height: 100%;
-    background-color: #c79a5c;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -415,6 +414,10 @@ header .header-menu nav ul li a:hover {
     flex-direction: column;
     padding-left: 25px;
     padding-right: 25px;
+    transition: all ease 0.2s;
+ }
+ .servicos-item:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
  }
  .servicos-item img {
     width: 30%;
@@ -442,6 +445,166 @@ header .header-menu nav ul li a:hover {
 span .quebrar {
     display: none;
 }
+
+  /* ADVOGADOS ---------------------------------------------------------------------*/
+#advogados {
+    width: 100vw;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: #350508;
+    height: auto;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    background-image: url('imagens/fundo-advogados.png');
+    background-size: cover;
+    background-position: center;
+    
+}
+.advogado-titulo {
+    width: 100%;
+   
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.advogado-titulo h1 {
+    font-size: 35px;
+    font-weight: 900;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-radius: 105px;
+    color: #c79a5c;
+    border: 2px solid #c79a5c;
+
+    
+}
+.advogado-container {
+    width: 100vw;
+    height: 70vh;
+
+    display: flex;
+}
+.advogado-seta-right,
+.advogado-seta-left {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.advogado-seta-right .material-symbols-outlined,
+.advogado-seta-left .material-symbols-outlined {
+    background-color: #c79a5c;
+    color: #350508;
+    border-radius: 40px;
+}
+.advogado-seta-right .material-symbols-outlined:hover,
+.advogado-seta-left .material-symbols-outlined:hover {
+    background-color: #FAECCF;
+}
+.advogado-seta-right {
+    justify-content: start;
+}
+.advogado-listarea {
+    width: 80vw;
+
+    height: 100%;
+    overflow: hidden;
+}
+.advogado-list {
+width: 320vw;
+height: 100%;
+display: flex;
+margin-left: 0vw;
+overflow: hidden;
+transition: all ease 0.4s;
+}
+.advogado-item {
+    width: 80vw;
+
+    height: 100%;
+    
+    display: flex;
+}
+.advogado-foto {
+    width: 30vw;
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.advogado-foto img{
+    width: 250px;
+}
+.advogado-texto {
+    width: 50vw ;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.advogado-texto h1{
+    color: #c79a5c;
+    font-size: 40px;
+    font-weight: 800;
+   
+}
+.advogado-texto h2 {
+    color: #c79a5c;
+    letter-spacing: 2px;
+     margin-bottom: 10px;
+}
+.advogado-texto h3 {
+    color: #fcfaed;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+ /* DEPOIMENTOS ---------------------------------------------------------------------*/
+
+
+#depoimentos {
+    width: 100vw;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: #FAECCF;
+    height: auto;
+    background-image: url('imagens/fundo-depoimentos.png');
+    background-size: cover;
+    
+}
+.depoimentos-titulo {
+    width: 100%;
+    height: 40px;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.depoimentos-titulo h1 {
+    color: #540007;
+    font-weight: 800;
+    font-size: 45px;
+}
+.depoimentos-container {
+    
+    width: 100%;
+    height: 300px;
+}
+
+
+
+
 
 
 
