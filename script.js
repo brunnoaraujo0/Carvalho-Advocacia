@@ -1,6 +1,6 @@
 let margin = 0;
 let marginAdvogado = 0;
-
+let marginDepoimentos = 0;
 document.querySelector('.material-symbols-outlined').addEventListener('click', ()=>{ 
     document.querySelector('.menu-hamburguer').style.opacity = 0; 
     document.querySelector('.menu-hamburguer').style.display = 'flex';
@@ -86,4 +86,49 @@ document.querySelector('.advogado-seta-right  .material-symbols-outlined').addEv
         marginAdvogado = (-240);
     }
     document.querySelector('.advogado-list').style.marginLeft = marginAdvogado + 'vw';
+});
+
+
+
+
+
+
+
+document.querySelector('.advogado-seta-left-responsivo .material-symbols-outlined').addEventListener('click', () => {
+
+    marginAdvogado = marginAdvogado + 100;
+    if(marginAdvogado > 0){
+        marginAdvogado = 0;
+    }
+
+    document.querySelector('.advogado-list').style.marginLeft = marginAdvogado + 'vw';
+});
+
+document.querySelector('.advogado-seta-right-responsivo  .material-symbols-outlined').addEventListener('click', () => {
+    marginAdvogado = marginAdvogado - 100;
+    if(marginAdvogado < (-240)){
+        marginAdvogado = (-240);
+    }
+    document.querySelector('.advogado-list').style.marginLeft = marginAdvogado + 'vw';
+});
+
+
+
+
+document.querySelector('.depoimentos-seta-left .material-symbols-outlined').addEventListener('click', () => {
+
+    marginDepoimentos = marginDepoimentos+ 80;
+    if(marginDepoimentos > 0){
+        marginDepoimentos = 0;
+    }
+
+    document.querySelector('.depoimentos-list').style.marginLeft = marginDepoimentos + 'vw';
+});
+
+document.querySelector('.depoimentos-seta-right  .material-symbols-outlined').addEventListener('click', () => {
+    marginDepoimentos = marginDepoimentos - 80;
+    if(marginDepoimentos < (-80)){
+        marginDepoimentos = (-80);
+    }
+    document.querySelector('.depoimentos-list').style.marginLeft = marginDepoimentos + 'vw';
 });

@@ -569,7 +569,42 @@ transition: all ease 0.4s;
     font-size: 25px;
     font-weight: 400;
 }
-
+.advogado-texto-responsivo {
+    margin-left: 10px;
+    display: none;
+    flex-direction: column;
+    
+    
+}
+.advogado-texto-responsivo h1{
+    color: #c79a5c;
+    font-size: 30px;
+    font-weight: 800;
+}
+.advogado-texto-responsivo h2 {
+    color: #fcfaed;
+    font-size: 15px;
+    font-weight: 400;
+}
+.advogados-setas-responsivo {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.advogado-seta-right-responsivo .material-symbols-outlined,
+.advogado-seta-left-responsivo .material-symbols-outlined {
+    background-color: #c79a5c;
+    color: #350508;
+    border-radius: 40px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.advogado-seta-right-responsivo .material-symbols-outlined:hover,
+.advogado-seta-left-responsivo .material-symbols-outlined:hover {
+    background-color: #FAECCF;
+}
  /* DEPOIMENTOS ---------------------------------------------------------------------*/
 
 
@@ -586,7 +621,7 @@ transition: all ease 0.4s;
 .depoimentos-titulo {
     width: 100%;
     height: 40px;
-
+    margin-bottom: 20px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -597,11 +632,115 @@ transition: all ease 0.4s;
     font-size: 45px;
 }
 .depoimentos-container {
-    
     width: 100%;
     height: 300px;
+    display: flex;
 }
 
+.depoimentos-seta-right,
+.depoimentos-seta-left {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.depoimentos-seta-right .material-symbols-outlined,
+.depoimentos-seta-left .material-symbols-outlined {
+    background-color: #380508;
+    color: #FAECCF;
+    border-radius: 40px;
+}
+.depoimentos-seta-right .material-symbols-outlined:hover,
+.depoimentos-seta-left .material-symbols-outlined:hover {
+    background-color: #c79a5c;
+}
+.depoimentos-seta-right {
+    justify-content: start;
+}
+
+.depoimentos-listarea {
+    width: 80vw;
+    height: 100%;
+    overflow: hidden;
+}
+.depoimentos-list {
+    width: 160vw;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0vw;
+    overflow: hidden;
+    transition: all ease 0.4s;
+}
+.depoimentos-item {
+    width: 100%;
+    height: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #540007;
+    border-radius: 55px;
+    display: flex;
+}
+.depoimentos-area1 {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+
+}
+.depoimentos-area1 img {
+    width: 130px;
+}
+.depoimentos-area1 h1 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #c79a5c;
+}
+.depoimentos-area1 h3 {
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    color: #FAECCF;
+}
+.depoimentos-area2 {
+
+    width: calc(100% - 300px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 30px;
+}
+.depoimentos-area2 h3 {
+    font-size: 20px;
+    color: #FAECCF;
+    font-weight: 600;
+}
+
+  /* DUVIDAS ---------------------------------------------------------------------*/
+  #duvidas {
+    width: 100%;
+    height: auto;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-image: url('imagens/fundo-duvidas.png');
+    background-size: cover;
+    
+  }
+  .duvidas-titulo {
+    background-color: #c79a5c;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
 
 
 
@@ -676,6 +815,7 @@ transition: all ease 0.4s;
         display: flex;
     
     }
+    
     
 }
 
@@ -805,8 +945,150 @@ transition: all ease 0.4s;
      span .quebrar {
         display: flex;
     }
-    
+    #advogados {
+        width: 100vw;
+        padding-bottom: 5vh;
+        padding-top: 5vh;
+        
+    }
+    .depoimentos-item {
+        width: 100%;
+        height: 90%;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: #540007;
+        border-radius: 55px;
+        display: flex;
+        flex-direction: column;
+     
+    }
 
+    .depoimentos-area1 {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding-left: 30px;
+     
+    
+    }
+    .depoimentos-area2 {
+    
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .depoimentos-area1 img {
+        width: 70px;
+    }
+    .depoimentos-area1 h1 {
+        font-size: 20px;
+        font-weight: 800;
+        color: #c79a5c;
+    }
+    .depoimentos-area1 h3 {
+        font-size: 20px;
+        letter-spacing: 5px;
+        font-weight: 400;
+        color: #FAECCF;
+    }
+    .depoimentos-area2 h3 {
+        font-size: 0.8rem;
+        color: #FAECCF;
+        font-weight: 600;
+    }
+    .advogado-titulo {
+       
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+    .advogado-titulo h1 {
+        font-size: 20px;
+        
+    
+        
+    }
+    .advogado-seta-right,
+.advogado-seta-left {
+    
+    display: none;
+}
+.advogado-listarea {
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+}
+.advogado-list {
+width: 400vw;
+height: 100%;
+}
+.advogado-item {
+    width: 100vw;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+}
+.advogado-foto img{
+    width: 130px;
+}
+.advogado-foto {
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+
+}
+.advogado-texto {
+    width: 100vw ;
+    height: 20vh;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+ 
+
+    
+}
+.advogado-texto h1{
+    color: #380508;
+    font-size: 40px;
+    font-weight: 800;
+    display: none;
+   
+}
+.advogado-texto h2 {
+    color: #350508;
+    letter-spacing: 2px;
+     margin-bottom: 10px;
+     display: none;
+}
+.advogado-texto h3 {
+    color: #fcfaed;
+    font-size: 15px;
+    font-weight: 400;
+}
+.advogado-texto-responsivo {
+   
+    display: flex;
+    
+    
+}
+.advogado-container {
+    width: 100vw;
+    height: 50vh;
+
+    display: flex;
+}
 }
 
 
