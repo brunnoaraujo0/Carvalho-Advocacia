@@ -962,7 +962,13 @@ transition: all ease 0.4s;
         flex-direction: column;
      
     }
-
+    .depoimentos-seta-right .material-symbols-outlined,
+    .depoimentos-seta-left .material-symbols-outlined {
+        background-color: #380508;
+        color: #FAECCF;
+        border-radius: 40px;
+        font-size: 27px;
+    }
     .depoimentos-area1 {
         width: 100%;
         height: 50%;
@@ -991,13 +997,13 @@ transition: all ease 0.4s;
         color: #c79a5c;
     }
     .depoimentos-area1 h3 {
-        font-size: 20px;
+        font-size: 13px;
         letter-spacing: 5px;
         font-weight: 400;
         color: #FAECCF;
     }
     .depoimentos-area2 h3 {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         color: #FAECCF;
         font-weight: 600;
     }

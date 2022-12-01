@@ -106,8 +106,8 @@ document.querySelector('.advogado-seta-left-responsivo .material-symbols-outline
 
 document.querySelector('.advogado-seta-right-responsivo  .material-symbols-outlined').addEventListener('click', () => {
     marginAdvogado = marginAdvogado - 100;
-    if(marginAdvogado < (-240)){
-        marginAdvogado = (-240);
+    if(marginAdvogado < (-300)){
+        marginAdvogado = (-300);
     }
     document.querySelector('.advogado-list').style.marginLeft = marginAdvogado + 'vw';
 });
