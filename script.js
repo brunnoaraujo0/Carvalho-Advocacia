@@ -144,17 +144,20 @@ window.addEventListener('scroll', () => {
 
 
 function monitorar(){
-    if(window.scrollY > 100){
-        document.querySelector('header').style.position = 'fixed';
-        document.querySelector('header').style.left =  0;
-        document.querySelector('header').style.top =  0;
-        document.querySelector('header').style.right =  0;
-        document.querySelector('header').style.zIndex =  100;
-        
-    }else {
-        document.querySelector('header').style.position = 'relative';
-       
+    if(window.innerWidth > 1100){
+        if(window.scrollY > 100){
+            document.querySelector('header').style.position = 'fixed';
+            document.querySelector('header').style.left =  0;
+            document.querySelector('header').style.top =  0;
+            document.querySelector('header').style.right =  0;
+            document.querySelector('header').style.zIndex =  100;
+            
+        }else {
+            document.querySelector('header').style.position = 'relative';
+           
+        }
     }
+    
 };
 
 window.sr = ScrollReveal({reset: true});
