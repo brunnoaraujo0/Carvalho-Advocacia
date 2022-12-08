@@ -1,6 +1,7 @@
 let margin = 0;
 let marginAdvogado = 0;
 let marginDepoimentos = 0;
+let scrool = false;
 document.querySelector('.material-symbols-outlined').addEventListener('click', ()=>{ 
     document.querySelector('.menu-hamburguer').style.opacity = 0; 
     document.querySelector('.menu-hamburguer').style.display = 'flex';
@@ -132,3 +133,77 @@ document.querySelector('.depoimentos-seta-right  .material-symbols-outlined').ad
     }
     document.querySelector('.depoimentos-list').style.marginLeft = marginDepoimentos + 'vw';
 });
+
+
+window.addEventListener('scroll', () => {
+
+    monitorar();
+
+
+})
+
+
+function monitorar(){
+    if(window.scrollY > 100){
+        document.querySelector('header').style.position = 'fixed';
+        document.querySelector('header').style.left =  0;
+        document.querySelector('header').style.top =  0;
+        document.querySelector('header').style.right =  0;
+        document.querySelector('header').style.zIndex =  100;
+        
+    }else {
+        document.querySelector('header').style.position = 'relative';
+       
+    }
+};
+
+window.sr = ScrollReveal({reset: true});
+
+ScrollReveal().reveal('.informacoes-caixa', {
+    delay: 300,
+    rotate:{
+        x:100,
+        y:0,
+        z:0
+    }
+})
+ScrollReveal().reveal('.quem-somos-brasao', {
+    delay: 400,
+    rotate:{
+        x:100,
+        y:0,
+        z:0
+    }
+})
+ScrollReveal().reveal('.quem-somos-textos', {
+    delay: 400,
+    rotate:{
+        x:0,
+        y:100,
+        z:0
+    }
+})
+ScrollReveal().reveal('.inicio-img', {
+    delay: 400,
+    rotate:{
+        x:0,
+        y:100,
+        z:0
+    }
+})
+ScrollReveal().reveal('.inicio-textos h1', {
+    delay: 400,
+    rotate:{
+        x:0,
+        y:100,
+        z:0
+    }
+})
+ScrollReveal().reveal('.inicio-textos a', {
+    delay: 400,
+    rotate:{
+        x:0,
+        y:100,
+        z:0
+    }
+})
